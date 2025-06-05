@@ -1,5 +1,5 @@
 import "../App.css";
-import cv from "../CV _Marina_Saraiva.pdf";
+import cv from "../CVMarinaSaraiva-nn.pdf";
 
 function Navbar() {
     const scrollToSection = (id: string) => {
