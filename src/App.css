@@ -1,0 +1,196 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+/* _____________navbar ___________*/
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 1.5rem;
+
+}
+
+.navbar button {
+  color: white;
+  background-color: transparent;  
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border: solid black 1px;
+  font-family: Poppins;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar button:not(.cv)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color: #5d00c6; 
+  transition: width 0.3s ease;
+}
+
+.navbar button:not(.cv):hover::after {
+  width: 100%;
+}
+
+.navbar .cv a {
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.navbar .cv {  
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  background: linear-gradient(to right,  #2016b8, #bb00c3, #2016b8);
+  background-size: 200% 100%;
+  background-position: 0% 50%;
+  transition: background-position 3s linear;
+}
+
+.navbar .cv:hover {
+  background-position: 200% 50%;
+}
+
+@keyframes slide-gradient-continuous {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+
+
+/* ______________ intro ______________ */
+
+.bloc-intro {
+  display: flex;
+  margin-top: 9rem;
+  justify-content: center;
+  gap: 10%
+}
+
+.hello {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #00b1fe;
+  margin: 0rem 0 0.2rem;
+}
+.color-dev {
+  font-size: 2.8rem;
+  color: #bb00c3;
+  font-weight: 700;
+  margin: 0rem;
+
+}
+
+.description {
+  color: white;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.button-projet{
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;  
+  padding:  0.8rem 1.2rem;
+  border-radius: 8px;
+  z-index: 1;
+  border: 2px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: 
+    linear-gradient(black, black),
+    linear-gradient(45deg, #2016b8, #bb00c3, #2016b8);
+  background-size: 200% 200%;
+  background-position: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-projet:hover {
+  animation: rotate-gradient 1.5s linear infinite;
+}
+
+@keyframes rotate-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.picture-intro {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, black, #5c00c63d , #5c00c6);
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture-intro img {
+  width: 100%;  /* un peu plus petit que le conteneur pour voir le fond */
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: transparent;
+  display: block;
+}
+
+.separateur {
+  width: 30%;
+  height: 3px;
+  background-color: #252525;
+  margin: 8rem auto; 
+  border-radius: 1px; 
+}
