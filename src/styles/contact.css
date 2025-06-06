@@ -1,0 +1,105 @@
+.contact {
+    font-size: 2rem;
+    color: #00CCFF;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 0, 180, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.contact-form label {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: white;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #b30095;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 8px #b30095;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {  
+  align-self: flex-start;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  background: linear-gradient(to right,  #2016b8, #bb00c3, #2016b8);
+  background-size: 200% 100%;
+  background-position: 0% 50%;
+  transition: background-position 2s linear;
+}
+
+.contact-form button:hover {
+  background-position: 200% 50%;
+}
+
+@keyframes slide-gradient-continuous {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+.contact-section {
+  margin-bottom: 4rem;
+}
+
+.icons-intro {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.icons-intro img{
+  width: auto;
+  height: 35px;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+
+}
+
+/* TABLETTE */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}

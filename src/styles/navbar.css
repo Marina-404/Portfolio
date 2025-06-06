@@ -1,0 +1,123 @@
+/* _____________navbar ___________*/
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 2rem 0;
+  background-color:#010214;
+  z-index: 1000;
+}
+
+.burger {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.navbar button {
+  color: white;
+  background-color: transparent;  
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+  border: solid #010214 1px;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar button:not(.cv)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color: #2016b8; 
+  transition: width 0.3s ease;
+}
+
+.navbar button:not(.cv):hover::after {
+  width: 100%;
+}
+
+.navbar .cv {  
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  background: linear-gradient(to right,  #2016b8, #bb00c3, #2016b8);
+  background-size: 200% 100%;
+  background-position: 0% 50%;
+  transition: background-position 2s linear;
+}
+
+.navbar .cv:hover {
+  background-position: 200% 50%;
+}
+
+@keyframes slide-gradient-continuous {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  nav.navbar.mobile {
+    display: block;
+  }
+
+  .burger {
+    display: block;
+    text-align: left;
+    margin-left: 2rem;
+  }
+  .cv { 
+
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #010214;
+    position: absolute;
+    top: 60px; /* sous la navbar */
+    left: 0;
+    width: 100%;
+    gap: 10px;
+    padding: 1rem 0;
+    z-index: 1500;
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+}
+
+/* TABLETTE */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}

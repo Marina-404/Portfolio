@@ -3,18 +3,18 @@ import Contact from "./components/Contact";
 import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-
 import "./App.css";
+import ScrollToTopButton from "./components/scrollButton";
 
 function App() {
   return (
-    <div className="app">
-    <Navbar /> 
-    <Intro />
-
-
-
+    <div>
+      <Navbar /> 
+      <Intro />
+      <Projects />
+      <About />
+      <Contact />
+      <ScrollToTopButton />
     </div>
   )
 }

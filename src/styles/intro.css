@@ -1,0 +1,116 @@
+/* ______________ intro ______________ */
+
+.bloc-intro {
+  display: flex;
+  margin-top: 14rem;
+  justify-content: center;
+  gap: 7%;
+}
+
+.hello {
+  letter-spacing: 1.2px;
+  font-size: 2.9rem;
+  font-weight: 700;
+  color: #00CCFF;
+  margin: 0rem 0 0.2rem;
+}
+.color-dev {
+  letter-spacing: 1.2px;
+  font-size: 2.9rem;
+  color: #FF14EF;
+  font-weight: 700;
+  margin: 0rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin: 3rem 0;
+  letter-spacing: 1.7px;
+}
+
+.button-projet{
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 2px;  
+  padding:  0.8rem 1.2rem;
+  border-radius: 8px;
+  z-index: 1;
+  border: 2px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: 
+    linear-gradient(rgb(12, 12, 12), rgb(12, 12, 12)),
+    linear-gradient(45deg, #2016b8, #bb00c3, #2016b8);
+  background-size: 200% 200%;
+  background-position: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-projet:hover {
+  animation: rotate-gradient 1.5s linear infinite;
+}
+
+@keyframes rotate-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.picture-intro {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px #6a0085 solid;
+}
+
+.picture-intro img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: transparent;
+  display: block;
+}
+
+.icons-intro {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.icons-intro img{
+  width: auto;
+  height: 35px;
+  cursor: pointer;
+}
+
+.divider {
+  width: 30%;
+  height: 3px;
+  background-color: #1d1d1d;
+  margin: 8rem auto; 
+  border-radius: 1px; 
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+
+}
+
+/* TABLETTE */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
