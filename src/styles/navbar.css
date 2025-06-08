@@ -78,19 +78,34 @@
 @media screen and (max-width: 768px) {
   .navbar {
     display: none;
+    padding-bottom: 4rem;
   }
 
   nav.navbar.mobile {
     display: block;
   }
 
+  .navbar button:not(.cv)::after {
+    content: none;
+  }
+
   .burger {
     display: block;
     text-align: left;
     margin-left: 2rem;
-  }
-  .cv { 
 
+  }
+
+  .burger-icon {
+    font-size: 2rem;
+    position: fixed;
+    top: 30px;
+  }
+
+  .navbar.mobile .cv { 
+    position: fixed;
+    top: 20px;
+    right: 20px;
   }
 
   .mobile-menu {
@@ -98,7 +113,7 @@
     flex-direction: column;
     background-color: #010214;
     position: absolute;
-    top: 60px; /* sous la navbar */
+    top: 80px;
     left: 0;
     width: 100%;
     gap: 10px;

@@ -2,6 +2,7 @@ import "../App.css";
 import "../styles/navbar.css";
 import cv from "../CVMarinaSaraiva-nn.pdf";
 import { useState } from "react";
+import { CgMenuGridR } from "react-icons/cg";
 
 function Navbar() {
     const [open, setOpen] = useState(false);
@@ -21,7 +22,7 @@ function Navbar() {
         onClick={() => setOpen(!open)}
         aria-label="Toggle menu"
       >
-        ☰
+        <CgMenuGridR className="burger-icon"/>
     </button>
     <div className={`mobile-menu ${open ? "open" : ""}`}>
         <button onClick={() => scrollToSection("projets")}>Projets</button>

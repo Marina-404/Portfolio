@@ -1,4 +1,4 @@
-import "../../src/styles/skills.css";
+import "../../src/styles/about.css";
 import html from "../images/html5.svg";
 import css from "../images/css3.svg";
 import express from "../images/express.svg";

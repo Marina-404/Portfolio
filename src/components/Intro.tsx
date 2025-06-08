@@ -20,7 +20,6 @@ function Intro() {
           <div className="picture-intro">
             <img src={photo} alt="photo profil" />
           </div>
-          <div>
             <div className="icons-intro">
               <a href="https://github.com/Marina-404" target="_blank" rel="noopener noreferrer">
                 <img src={github} alt="GitHub" />
@@ -29,9 +28,8 @@ function Intro() {
                 <img src={linkedin} alt="linkedin" />
               </a>
             </div>
-          </div>
         </div>      
-        </div>
+      </div>
       <div className="divider"/>
     </>
     );

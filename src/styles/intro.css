@@ -7,19 +7,20 @@
   gap: 7%;
 }
 
-.hello {
-  letter-spacing: 1.2px;
-  font-size: 2.9rem;
-  font-weight: 700;
-  color: #00CCFF;
-  margin: 0rem 0 0.2rem;
-}
+.hello,
 .color-dev {
   letter-spacing: 1.2px;
   font-size: 2.9rem;
-  color: #FF14EF;
   font-weight: 700;
   margin: 0rem;
+} 
+
+.hello {
+  color: #00CCFF;
+}
+
+.color-dev {
+  color: #FF14EF;
 }
 
 .description {
@@ -82,7 +83,6 @@
   border-radius: 50%;
   object-fit: cover;
   background-color: transparent;
-  display: block;
 }
 
 .icons-intro {
@@ -107,6 +107,37 @@
 
 /* MOBILE */
 @media screen and (max-width: 768px) {
+  .bloc-intro {
+    flex-direction: column-reverse;
+    margin-top: 7rem;
+  }
+
+  .picture-intro {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+ }
+
+  .icons-intro {
+    margin: 1rem 0 1rem;
+  }
+
+  .hello,
+  .color-dev {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 1.2rem 3rem;
+  }
+
+  .button-projet {
+    display: block;
+    margin: 0 auto; 
+}
 
 }
 
