@@ -20,8 +20,8 @@
 
 .contact-form label {
   font-weight: 600;
-  letter-spacing: 0.5px;
-  font-size: 1rem;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
 }
 
 .contact-form input,
@@ -96,6 +96,26 @@
 
 /* MOBILE */
 @media screen and (max-width: 768px) {
+  .contact-section {
+    margin-bottom: 3rem;
+  }
+
+  .contact-form {
+    gap: 0.8rem;
+  }
+
+  .contact-form label {
+    font-size: 1rem;
+  }
+  .contact-form textarea {
+   resize: vertical;
+    min-height: 10px;
+  }
+
+  .contact-form button {
+    margin-top: 1rem;
+  }
+
 
 }
 

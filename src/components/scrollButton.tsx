@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../App.css";
-import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDropup } from "react-icons/io";
 
 function ScrollToTopButton() {
   const [visible, setVisible] = useState(false);
@@ -33,7 +33,7 @@ function ScrollToTopButton() {
   return (
     <div className={`scroll-to-top-button ${visible ? "visible" : ""}`}>
       <button type="button" onClick={scrollToTop} className="scroll-button">
-        <IoIosArrowUp />
+        <IoIosArrowDropup />
       </button>
     </div>
   );

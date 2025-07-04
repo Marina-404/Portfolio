@@ -9,8 +9,15 @@ function Navbar() {
 
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
-        if (element) element.scrollIntoView({behavior: "smooth"});
-        setOpen(false);
+        if (element) {
+              if (id === "projets") {
+                const offset = -150;
+                const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
+                window.scrollTo({ top: y, behavior: "smooth" });
+            } else {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
     };
 
     return(
@@ -35,7 +42,7 @@ function Navbar() {
     </nav>
     {/* desktop */}
     <nav className="navbar">
-        <button>
+        <button onClick={() => scrollToSection("projets")}>
             Projets
         </button>
         <button onClick={() => scrollToSection("about")}>

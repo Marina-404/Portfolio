@@ -33,7 +33,7 @@ function About() {
               <h2 className="skills">
                 Skills
               </h2>
-              <ul className="skills-category">
+              <ul className="skills-icons">
                 <li><img src={html} alt="html" /></li>
                 <li><img src={css} alt="css" /></li>
                 <li><img src={javascript} alt="javascript" /></li>

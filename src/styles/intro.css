@@ -42,7 +42,7 @@
   background-clip: padding-box, border-box;
   background-image: 
     linear-gradient(rgb(12, 12, 12), rgb(12, 12, 12)),
-    linear-gradient(45deg, #2016b8, #bb00c3, #2016b8);
+    linear-gradient(45deg, #2016b8, #FF14EF, #2016b8);
   background-size: 200% 200%;
   background-position: center;
   transition: transform 0.3s ease;
@@ -74,9 +74,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px #6a0085 solid;
+  border: 2px #bb00c3 solid;
+  position: relative;
+  box-shadow: 0 0 10px #bb00c3;
+  animation: pulse-glow 3s infinite ease-in-out;
 }
 
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px #bb00c3;
+  }
+  50% {
+    box-shadow: 0 0 50px #bb00c3;
+  }
+}
 .picture-intro img {
   width: 100%;
   height: 100%;
@@ -95,6 +106,11 @@
   width: auto;
   height: 35px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icons-intro img:hover {
+  transform: scale(1.3);
 }
 
 .divider {
@@ -116,6 +132,8 @@
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    border: 1px #bb00c3 solid;
+
  }
 
   .icons-intro {

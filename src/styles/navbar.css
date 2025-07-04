@@ -9,15 +9,11 @@
   justify-content: center;
   gap: 100px;
   padding: 2rem 0;
-  background-color:#010214;
+ background: linear-gradient(to right, #010005, #050426,#05042c, #06011d);
   z-index: 1000;
 }
 
 .burger {
-  display: none;
-}
-
-.mobile-menu {
   display: none;
 }
 
@@ -26,7 +22,7 @@
   background-color: transparent;  
   font-size: 1.1rem;
   letter-spacing: 1.2px;
-  border: solid #010214 1px;
+  border: transparent;
   font-weight: 600;
   position: relative;
   overflow: hidden;
@@ -93,7 +89,6 @@
     display: block;
     text-align: left;
     margin-left: 2rem;
-
   }
 
   .burger-icon {
@@ -109,7 +104,13 @@
   }
 
   .mobile-menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: all 0.4s ease;
     flex-direction: column;
     background-color: #010214;
     position: absolute;
@@ -117,12 +118,17 @@
     left: 0;
     width: 100%;
     gap: 10px;
-    padding: 1rem 0;
+    padding: 0;
     z-index: 1500;
+    pointer-events: none;
   }
 
   .mobile-menu.open {
-    display: flex;
+    max-height: 500px;
+    padding: 1rem 0;
+    pointer-events: auto;
+    transform: translateY(0);
+    opacity: 1;
   }
 
   .navbar {
