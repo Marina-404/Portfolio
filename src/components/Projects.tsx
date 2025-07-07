@@ -56,7 +56,14 @@ function Projects() {
                         <>
                         <div className="project-content">
                             {project.image && (
-                            <img src={project.image} alt={`Capture d'écran du projet ${project.title}`} className="project-image" loading="lazy"/>)}
+                            <img src={project.image} 
+                            alt={`Capture d'écran du projet ${project.title}`} 
+                            className="project-image" 
+                            loading="lazy"
+                            srcSet={`${project.image}?w=300 300w, ${project.image}?w=600 600w, ${project.image}?w=1000 1000w`}
+                            sizes="(max-width: 600px) 300px, (max-width: 1024px) 600px, 1000px"
+                            />
+                            )}
                             <h4 className="project-title">{project.title}</h4>
                             {project.description && (<p className="project-description">{project.description}</p>)}
                         </div>

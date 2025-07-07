@@ -19,7 +19,7 @@ function Intro() {
           }
       };
 
-    return(
+    return (
       <>
       <div className="bloc-intro">
         <div>
@@ -31,7 +31,12 @@ function Intro() {
         </div>  
         <div>
           <div className="picture-intro">
-            <img src={photo} alt="Photo de profil" fetchPriority="high" />
+            <img src={photo} alt="Photo de profil" fetchPriority="high" 
+            srcSet={`
+                ${photo}?w=300 300w,
+                ${photo}?w=600 600w,
+                ${photo}?w=1000 1000w`}
+            sizes="(max-width: 600px) 300px, (max-width: 1024px) 600px, 1000px" />
           </div>
             <div className="icons-intro">
               <a href="https://github.com/Marina-404" target="_blank" rel="noopener noreferrer">
