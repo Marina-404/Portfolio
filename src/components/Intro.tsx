@@ -3,11 +3,8 @@ import "../styles/intro.css";
 import photo from "../Marina_Saraiva.png";
 import github from "../images/github-white-icon.svg";
 import linkedin from "../images/linkedin-white-icon.svg";
-import { useState } from "react";
-
 
 function Intro() {
-      const [open, setOpen] = useState(false);
   
       const scrollToSection = (id: string) => {
           const element = document.getElementById(id);
