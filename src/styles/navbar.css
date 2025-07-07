@@ -9,7 +9,7 @@
   justify-content: center;
   gap: 100px;
   padding: 2rem 0;
- background: linear-gradient(to right, #010005, #050426,#05042c, #06011d);
+  background: linear-gradient(to right, #010005, #050426,#05042c, #06011d);
   z-index: 1000;
 }
 
@@ -109,15 +109,15 @@
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     transition: all 0.4s ease;
     flex-direction: column;
-    background-color: #010214;
+    background: linear-gradient(to right, #010005, #050426,#05042c, #06011d);
     position: absolute;
     top: 80px;
     left: 0;
     width: 100%;
-    gap: 10px;
+    gap: 30px;
     padding: 0;
     z-index: 1500;
     pointer-events: none;

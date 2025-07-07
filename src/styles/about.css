@@ -63,6 +63,8 @@
 
     .about-description {
         margin: 1rem 2rem;
+        line-height: 1.6;
+        font-size: 0.9rem;
     }
 
     .about-title {
@@ -76,19 +78,18 @@
     }
 
     .skills-icons {
-        grid-template-columns: repeat(3, 1fr);
-        height: 70vh;
+        grid-template-columns: repeat(4, 1fr);
+        height: 40vh;
         width: auto;
         margin: 0 auto;
         gap: 0rem;
     }
 
     .skills-icons img {
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: auto;
         margin: 0 auto;
     }
-
 
 }
 
