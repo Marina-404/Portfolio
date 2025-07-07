@@ -32,7 +32,7 @@ function ScrollToTopButton() {
 
   return (
     <div className={`scroll-to-top-button ${visible ? "visible" : ""}`}>
-      <button type="button" onClick={scrollToTop} className="scroll-button">
+      <button type="button" onClick={scrollToTop} className="scroll-button" aria-label="Retour en haut de la page">
         <IoIosArrowDropup />
       </button>
     </div>

@@ -46,8 +46,8 @@ function Projects() {
         <section id="projets">
             <h3 className="projet">Mes Projets</h3>
             <div className="project-grid">
-                {projects.map((project, index) => (
-                    <div className={`project-card ${project.isPlaceholder ? "placeholder-card": ""}`} key={index}>
+                {projects.map((project) => (
+                    <div className={`project-card ${project.isPlaceholder ? "placeholder-card": ""}`} key={project.title}>
                         {project.isPlaceholder ? (
                             <div className="placeholder-content">
                                 <h4 className="project-title">{project.title}</h4>
@@ -56,7 +56,7 @@ function Projects() {
                         <>
                         <div className="project-content">
                             {project.image && (
-                            <img src={project.image} alt={project.title} className="project-image"/>)}
+                            <img src={project.image} alt={`Capture d'écran du projet ${project.title}`} className="project-image" loading="lazy"/>)}
                             <h4 className="project-title">{project.title}</h4>
                             {project.description && (<p className="project-description">{project.description}</p>)}
                         </div>
@@ -64,8 +64,11 @@ function Projects() {
                             {project.langages && (
                             <p className="project-langages">{project.langages}</p>)}
                             {project.github && (
-                            <a href={project.github} target="_blank" rel="noopener noreferrer">
-                                <img src={githubLogo} alt="logo-github" className="logo-github"/>
+                            <a href={project.github} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label={`Voir le code source du projet ${project.title} sur GitHub`}>
+                                <img src={githubLogo} alt={`Logo GitHub du projet ${project.title}`} className="logo-github" loading="lazy" />
                             </a>
                         )}
                         </div>

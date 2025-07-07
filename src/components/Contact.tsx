@@ -23,7 +23,7 @@ function Contact() {
       {
         loading: "Envoi en cours...",
         success: "Message envoyé avec succès !",
-        error: "Erreur lors de l'envoi.",
+        error: (err) => `Erreur lors de l'envoi : ${err.message}`,
       }
     ).then(() => {
         form.current?.reset();
@@ -38,14 +38,14 @@ function Contact() {
       </h3>
         <div className="contact-section">
         <form ref={form} onSubmit={sendEmail} className="contact-form">
-          <label>Nom</label>
-          <input type="text" name="user_name" required />
+          <label htmlFor="user_name" >Nom</label>
+          <input type="text" name="user_name" id="user_name" required />
 
-          <label>Email</label>
-          <input type="email" name="user_email" required />
+          <label htmlFor="user_email">Email</label>
+          <input type="email" name="user_email" id="user_email" required />
 
-          <label>Message</label>
-          <textarea name="message" required />
+          <label htmlFor="message">Message</label>
+          <textarea name="message" id="message" required />
 
           <button type="submit">Envoyer</button>
           <Toaster
@@ -55,10 +55,10 @@ function Contact() {
         </form>
         <div className="icons-intro">
           <a href="https://github.com/Marina-404" target="_blank" rel="noopener noreferrer">
-            <img src={github} alt="GitHub" />
+            <img src={github} alt="Voir mon profil GitHub" loading="lazy"/>
           </a>
           <a href="https://www.linkedin.com/in/marina-saraiva-9a593b341/" target="_blank" rel="noopener noreferrer">
-            <img src={linkedin} alt="linkedin" />
+            <img src={linkedin} alt="Voir mon profil LinkedIn" loading="lazy"/>
           </a>
         </div>
         </div>

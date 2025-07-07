@@ -17,6 +17,7 @@ function Navbar() {
             } else {
                 element.scrollIntoView({ behavior: "smooth" });
             }
+            setOpen(false);
         }
     };
 
@@ -27,14 +28,21 @@ function Navbar() {
     <button
         className="burger"
         onClick={() => setOpen(!open)}
-        aria-label="Toggle menu"
+        aria-label="Ouvrir ou fermer le menu de navigation"
+        aria-expanded={open}
       >
         <CgMenuGridR className="burger-icon"/>
     </button>
     <div className={`mobile-menu ${open ? "open" : ""}`}>
-        <button onClick={() => scrollToSection("projets")}>Projets</button>
-        <button onClick={() => scrollToSection("about")}>A Propos / Skills</button>
-        <button onClick={() => scrollToSection("contact")}>Contact</button>
+        <button onClick={() => scrollToSection("projets")} aria-label="Aller à la section Projets">
+            Projets
+        </button>
+        <button onClick={() => scrollToSection("about")} aria-label="Aller à la section à propos / skills" >
+            A Propos / Skills
+        </button>
+        <button onClick={() => scrollToSection("contact")} aria-label="Aller à la section Contact">
+            Contact
+        </button>
     </div>
     <a href={cv} target="_blank" rel="noopener noreferrer" className="cv">
         Télécharger le CV
@@ -42,13 +50,13 @@ function Navbar() {
     </nav>
     {/* desktop */}
     <nav className="navbar">
-        <button onClick={() => scrollToSection("projets")}>
+        <button onClick={() => scrollToSection("projets")} aria-label="Aller à la section Projets" >
             Projets
         </button>
-        <button onClick={() => scrollToSection("about")}>
+        <button onClick={() => scrollToSection("about")} aria-label="Aller à la section à propos / skills" >
             A Propos / Skills
         </button>
-        <button onClick={() => scrollToSection("contact")}>
+        <button onClick={() => scrollToSection("contact")} aria-label="Aller à la section Contact" >
             Contact
         </button>
         <a href={cv} target="_blank" rel="noopener noreferrer" className="cv">

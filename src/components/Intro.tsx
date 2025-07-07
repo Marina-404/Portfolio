@@ -27,18 +27,18 @@ function Intro() {
           <h1 className="hello">Marina Saraiva </h1>
           <h2 className="color-dev">Développeuse Web.</h2>
           <p className="description">Passionnée par la conception, motivée à apprendre.</p>
-          <button className="button-projet" onClick={() => scrollToSection("projets")}>Voir mes projets</button>
+          <button className="button-projet" onClick={() => scrollToSection("projets")} aria-label="Aller à la section projets">Voir mes projets</button>
         </div>  
         <div>
           <div className="picture-intro">
-            <img src={photo} alt="photo profil" />
+            <img src={photo} alt="Photo de profil" loading="lazy" />
           </div>
             <div className="icons-intro">
               <a href="https://github.com/Marina-404" target="_blank" rel="noopener noreferrer">
-                <img src={github} alt="GitHub" />
+                <img src={github} alt="Voir mon profil GitHub" loading="lazy"/>
               </a>
               <a href="https://www.linkedin.com/in/marina-saraiva-9a593b341/" target="_blank" rel="noopener noreferrer">
-                <img src={linkedin} alt="linkedin" />
+                <img src={linkedin} alt="Voir mon profil Linkedin" loading="lazy"/>
               </a>
             </div>
         </div>      

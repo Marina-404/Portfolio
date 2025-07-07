@@ -14,7 +14,7 @@ function About() {
     
     return(
       <>
-      <section id="about">
+      <section id="about" aria-labelledby="about-title">
         <div className="about-section">
           <div className="about-conteneur">
             <h2 className="about-title">
@@ -34,17 +34,17 @@ function About() {
                 Skills
               </h2>
               <ul className="skills-icons">
-                <li><img src={html} alt="html" /></li>
-                <li><img src={css} alt="css" /></li>
-                <li><img src={javascript} alt="javascript" /></li>
-                <li><img src={react} alt="react" /></li>
-                <li><img src={express} alt="express" /></li>
-                <li><img src={git} alt="git" /></li>
-                <li><img src={github} alt="github" /></li>
-                <li><img src={postman} alt="postman" /></li>
-                <li><img src={mysql} alt="mysql" /></li>
-                <li><img src={node} alt="node" /></li>
-                <li><img src={typescript} alt="typescript" /></li>
+                <li><img src={html} alt="logo HTML5" loading="lazy" /></li>
+                <li><img src={css} alt="Logo CSS3" loading="lazy" /></li>
+                <li><img src={javascript} alt="Logo JavaScript" loading="lazy" /></li>
+                <li><img src={react} alt="Logo React" loading="lazy" /></li>
+                <li><img src={express} alt="Logo Express" loading="lazy" /></li>
+                <li><img src={git} alt="Logo Git" loading="lazy" /></li>
+                <li><img src={github} alt="Logo GitHub" loading="lazy" /></li>
+                <li><img src={postman} alt="Logo Postman" loading="lazy" /></li>
+                <li><img src={mysql} alt="Logo MySQL" loading="lazy" /></li>
+                <li><img src={node} alt="Logo Node.js" loading="lazy" /></li>
+                <li><img src={typescript} alt="Logo TypeScript" loading="lazy" /></li>
               </ul>
           </div>
         </div>
