@@ -1,8 +1,8 @@
 import "../styles/projet.css";
-import lePetitMacaron from "../images/lepetitmacaron.png";
-import devQuiz from "../images/devquiz.png";
-import lesPetitsBesoinsParisiens from "../images/lespetitsbesoinsparisiens.png";
-import nextOne from "../images/nextOne.png";
+import lePetitMacaron from "../images/lepetitmacaron.webp";
+import devQuiz from "../images/devquiz.webp";
+import lesPetitsBesoinsParisiens from "../images/lespetitsbesoinsparisiens.jpg";
+import nextOne from "../images/nextOne.jpg";
 import githubLogo from "../images/github-white-icon.svg";
 
 function Projects() {

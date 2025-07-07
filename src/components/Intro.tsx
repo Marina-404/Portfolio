@@ -1,6 +1,6 @@
 import "../App.css";
 import "../styles/intro.css";
-import photo from "../Marina_Saraiva.png";
+import photo from "../Marina_Saraiva.webp";
 import github from "../images/github-white-icon.svg";
 import linkedin from "../images/linkedin-white-icon.svg";
 
@@ -31,7 +31,7 @@ function Intro() {
         </div>  
         <div>
           <div className="picture-intro">
-            <img src={photo} alt="Photo de profil" loading="lazy" />
+            <img src={photo} alt="Photo de profil" fetchPriority="high" />
           </div>
             <div className="icons-intro">
               <a href="https://github.com/Marina-404" target="_blank" rel="noopener noreferrer">
