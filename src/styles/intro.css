@@ -129,7 +129,7 @@
 @media screen and (max-width: 768px) {
   .bloc-intro {
     flex-direction: column-reverse;
-    margin-top: 3rem;
+    margin-top: 1rem;
     gap: 0;
 
   }
