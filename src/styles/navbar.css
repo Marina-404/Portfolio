@@ -82,6 +82,8 @@
   .navbar {
     display: none;
     padding-bottom: 4rem;
+    background: radial-gradient(circle at 40% 80%, rgba(115, 72, 193, 0.4) 0%, rgba(0, 0, 0, 0) 50%),
+             ;
   }
 
   nav.navbar.mobile {
@@ -118,13 +120,7 @@
     opacity: 0;
     transform: translateY(-10px);
     transition: all 0.4s ease;
-    background: radial-gradient(circle at 40% 80%, rgba(115, 72, 193, 0.4) 0%, rgba(0, 0, 0, 0) 50%),
-                radial-gradient(circle at 70% 30%, rgba(70, 50, 160, 0.3) 0%, rgba(0, 0, 0, 0) 45%),
-                radial-gradient(circle at 50% 50%, rgba(30, 0, 60, 0.25) 0%, rgba(0, 0, 0, 0) 60%),
-                radial-gradient(circle at 20% 20%, rgba(0, 25, 50, 0.15) 0%, rgba(0, 0, 0, 0) 50%),
-                radial-gradient(circle at 80% 70%, rgba(0, 15, 35, 0.1) 0%, rgba(0, 0, 0, 0) 40%),
-                #06000f;
-    background-size: cover;
+    background-color: #090419;
     position: fixed;
     top: 80px;
     left: 0;
