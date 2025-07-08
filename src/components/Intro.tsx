@@ -48,7 +48,7 @@ function Intro() {
             </div>
         </div>      
       </div>
-      <div className="divider"/>
+      <div className="divider-intro"/>
     </>
     );
 }
