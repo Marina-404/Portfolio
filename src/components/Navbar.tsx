@@ -49,20 +49,22 @@ function Navbar() {
     </a>
     </nav>
     {/* desktop */}
-    <nav className="navbar">
-        <button onClick={() => scrollToSection("projets")} aria-label="Aller à la section Projets" >
-            Projets
-        </button>
-        <button onClick={() => scrollToSection("about")} aria-label="Aller à la section à propos / skills" >
-            A Propos / Skills
-        </button>
-        <button onClick={() => scrollToSection("contact")} aria-label="Aller à la section Contact" >
-            Contact
-        </button>
-        <a href={cv} target="_blank" rel="noopener noreferrer" className="cv">
-            Télécharger le CV
-        </a>
-    </nav>
+    <div className="background-fixed">
+        <nav className="navbar">
+            <button onClick={() => scrollToSection("projets")} aria-label="Aller à la section Projets" >
+                Projets
+            </button>
+            <button onClick={() => scrollToSection("about")} aria-label="Aller à la section à propos / skills" >
+                A Propos / Skills
+            </button>
+            <button onClick={() => scrollToSection("contact")} aria-label="Aller à la section Contact" >
+                Contact
+            </button>
+            <a href={cv} target="_blank" rel="noopener noreferrer" className="cv">
+                Télécharger le CV
+            </a>
+        </nav>
+    </div>
     </>
     );
 }
