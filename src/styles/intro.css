@@ -23,7 +23,7 @@
 
 .color-dev {
   color: #FF14EF;
-   text-shadow: 0 0 15px #FF14EF;
+  text-shadow: 0 0 15px #FF14EF;
 }
 
 .description {
@@ -129,19 +129,21 @@
 @media screen and (max-width: 768px) {
   .bloc-intro {
     flex-direction: column-reverse;
-    margin-top: 7rem;
+    margin-top: 3rem;
+    gap: 0;
+
   }
 
   .picture-intro {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     margin: 0 auto;
     border: 1px #bb00c3 solid;
 
  }
 
   .icons-intro {
-    margin: 1rem 0 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .hello,
