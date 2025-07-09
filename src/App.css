@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   height: auto;
-background-color: #06000f;
+  background-color: #06000f;
   background-image:
     radial-gradient(circle at 40% 80%, rgba(115, 72, 193, 0.4) 0%, rgba(0, 0, 0, 0) 50%),
     radial-gradient(circle at 70% 30%, rgba(70, 50, 160, 0.3) 0%, rgba(0, 0, 0, 0) 45%),

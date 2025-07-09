@@ -14,8 +14,15 @@
   padding: 2rem;
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 0, 180, 0.1);
+  border: solid 1px #891ffa;
   backdrop-filter: blur(8px);
+  transition: 0.4s;
+
+}
+
+.contact-form:hover {
+  box-shadow: 0 0 20px #891ffa;
+
 }
 
 .contact-form label {
@@ -32,6 +39,7 @@
   background-color: rgba(255, 255, 255, 0.07);
   color: white;
   font-size: 1rem;
+  letter-spacing: 2px;
   font-family: inherit;
   transition: 0.3s ease;
 }
@@ -39,9 +47,9 @@
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #b30095;
+  border-color: #891ffa;
   background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 8px #b30095;
+  box-shadow: 0 0 8px #891ffa;
 }
 
 .contact-form textarea {

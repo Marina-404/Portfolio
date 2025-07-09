@@ -104,7 +104,12 @@
 .divid {
     width: 30%;
     height: 3px;
-    background-color: #1d1d1d;
+    background-image:
+        radial-gradient(circle at 40% 80%, rgba(115, 72, 193, 0.4) 0%, rgba(0, 0, 0, 0) 50%),
+        radial-gradient(circle at 70% 30%, rgba(70, 50, 160, 0.3) 0%, rgba(0, 0, 0, 0) 45%),
+        radial-gradient(circle at 50% 50%, rgba(30, 0, 60, 0.25) 0%, rgba(0, 0, 0, 0) 60%),
+        radial-gradient(circle at 20% 20%, rgba(0, 25, 50, 0.15) 0%, rgba(0, 0, 0, 0) 50%),
+        radial-gradient(circle at 80% 70%, rgba(0, 15, 35, 0.1) 0%, rgba(0, 0, 0, 0) 40%);
     margin: 5rem auto; 
     border-radius: 1px; 
 }
