@@ -1,6 +1,6 @@
 import "../App.css";
 import "../styles/intro.css";
-import photo from "../Marina_Saraiva.webp";
+import photo from "../ms-removebg-preview-removebg-preview.png";
 import github from "../images/github-white-icon.svg";
 import linkedin from "../images/linkedin-white-icon.svg";
 
@@ -25,8 +25,9 @@ function Intro() {
         <div>
           <p className="hello">Bonjour, je suis </p>
           <h1 className="hello">Marina Saraiva </h1>
-          <h2 className="color-dev">Développeuse Web.</h2>
-          <p className="description">Passionnée par la conception, motivée à apprendre.</p>
+          <h2 className="color-dev">Future Administratrice</h2>
+          <h2 className="color-dev">Systèmes, Réseaux & Cloud</h2>
+          <p className="description">Curieuse et motivée, je développe mes compétences IT.</p>
           <button className="button-projet" onClick={() => scrollToSection("projets")} aria-label="Aller à la section projets">Voir mes projets</button>
         </div>  
         <div>

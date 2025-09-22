@@ -1,6 +1,6 @@
 import "../App.css";
 import "../styles/navbar.css";
-import cv from "../CVMarinaSaraiva-nn.pdf";
+import cv from "../CV_Marina_Saraiva_.pdf";
 import { useState } from "react";
 import { CgMenuGridR } from "react-icons/cg";
 
