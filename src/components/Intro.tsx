@@ -1,6 +1,6 @@
 import "../App.css";
 import "../styles/intro.css";
-import photo from "../ms-removebg-preview-removebg-preview.png";
+import photo from "../images/pportfolio__.png";
 import github from "../images/github-white-icon.svg";
 import linkedin from "../images/linkedin-white-icon.svg";
 
